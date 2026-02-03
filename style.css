@@ -1,6 +1,6 @@
 /* This targets the entire page */
 body {
-    background-color: #03fc28 /* A light blue-grey background */
+    background-color: #57f01f
     font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
     display: flex;
     flex-direction: column;
