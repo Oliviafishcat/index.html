@@ -6,30 +6,38 @@
 </head>
 <body>
     <h1>6-7</h1>
-    <p id = "display">I built this website on GitHub.</p>
-<a href ="https://www.youtube.com"> 
-<button style = "background-color:red; width:20vw; height: 20vw"> Hi ></button>
-</a>
-<label for="wrote" >input text </label>
-<input type = "text" 
-width:20vw; 
-height: 20vw"
-id = "wrote" 
-name = "wrote" 
-required 
-maxlength = "100" 
-size = "10"
-placeholder = "text to display" /> 
-<br>
-<input type = "submit" value = "Send text"onclick= "text()"  >
-<script>
-function text(){
-let g = document.getElementById('wrote').value;
-        display.textContent = g;
-}
-</script>
-<br>
-<br>
-<input type = "color">
+    <p id="display">I built this website on GitHub.</p>
+
+    <a href="https://www.youtube.com"> 
+        <button style="background-color:red; width:20vw; height: 20vw"> Hi > </button>
+    </a>
+
+    <label for="wrote">input text </label>
+    <input 
+        type="text" 
+        id="wrote" 
+        name="wrote" 
+        style="width:20vw; height: 20vw"
+        placeholder="text to display"
+        maxlength="100" 
+        size="10"
+        required 
+    /> 
+
+    <br>
+
+    <input type="submit" value="Send text" onclick="text()">
+
+    <script>
+        function text() {
+            let g = document.getElementById('wrote').value;
+            display.textContent = g;
+        }
+    </script>
+
+    <br>
+    <br>
+
+    <input type="color">
 </body>
 </html>
