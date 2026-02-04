@@ -13,7 +13,7 @@ body {
 /* This styles your main heading */
 h1 {
     color: #2c3e50;
-    font-size: 12rem;
+    font-size: 24rem;
     border-bottom: 2px solid #3498db;
     padding-bottom: 10px;
 }
@@ -21,5 +21,5 @@ h1 {
 /* This styles the paragraph */
 p {
     color: #555;
-    font-size: 1.2rem;
+    font-size: 12rem;
 }
