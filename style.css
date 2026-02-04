@@ -1,6 +1,6 @@
 /* This targets the entire page */
 body {
-    background-color: #24c347
+    background-color: #24c347;
     font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
     display: flex;
     flex-direction: column;
