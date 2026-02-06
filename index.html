@@ -4,59 +4,50 @@
     <meta charset="UTF-8">
     <title>My First Website</title>
     <link rel="stylesheet" href="style.css">
-</head>
+    </head>
 <body>
 
     <h1>6-7</h1>
-
     <p id="display">I built this website on GitHub.</p>
 
     <a href="https://youtu.be/yRkkERLPzaI?si=aalrBs3aoNdCVxJ2"> 
-        <button style="background-color:red; width:20vw; height: 20vw"> Hi > </button>
+        <button style="background-color:red; width:100px; height: 100px; color: white;"> Hi > </button>
     </a>
 
-    <label for="wrote">input text </label>
-    <input 
-        type="text" 
-        id="wrote" 
-        name="wrote" 
-        style="width:10vw;" 
-        placeholder="text to display"
-        maxlength="100" 
-        size="10"
-        required 
-    /> 
+    <br><br>
 
-    <br>
+    <label for="wrote">Input text: </label>
+    <input type="text" id="wrote" placeholder="text to display" maxlength="100"> 
+    <button type="button" onclick="updateText()">Send text</button>
 
-    <input type="submit" value="Send text" onclick="text()">
+    <br><br>
 
-    <script>
-        function text() {
-            let g = document.getElementById('wrote').value;
-            document.getElementById('display').textContent = g;
-        }
-    </script>
-
-    <button type="button" onclick="playSound('mixkit-fast-double-click-on-mouse-275.wav')" style="background-color:blue; width:20vw; height: 20vw"> 
-        hello > 
+    <button type="button" onclick="playSound('click.wav')" style="background-color:blue; width:100px; height: 100px; color: white;"> 
+        Hello > 
     </button>
 
-    <br>
-    <br>
+    <br><br>
 
-    <input type="color"  oninput ="document.body.style.backgroundColor = this.value">
+    <label>Change Background: </label>
+    <input type="color" oninput="document.body.style.backgroundColor = this.value">
+
+    <br><br>
+
+    <img id="myImage" src="IMG_20260205_075036.png" alt="display" style="display: none; width: 200px;">
+    <button type="button" onclick="document.getElementById('myImage').style.display='block'">Show Image</button>
+    <button type="button" onclick="document.getElementById('myImage').style.display='none'">Hide Image</button>
+
     <script>
+        function updateText() {
+            let inputVal = document.getElementById('wrote').value;
+            document.getElementById('display').textContent = inputVal;
+        }
+
         function playSound(file) {
             var audio = new Audio(file);
-            audio.play();
+            audio.play().catch(e => console.log("Audio file not found or blocked by browser"));
         }
     </script>
-<img id="myImage" src="IMG_20260205_075036.png" alt="kissing" style="display: none;">
-<button type="button" onclick="document.getElementById('myImage').style.display='block'">
-  Show Image
-</button>
-<button type="button" onclick="document.getElementById('myImage').style.display='none'">
 
 </body>
 </html>
