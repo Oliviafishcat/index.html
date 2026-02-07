@@ -61,7 +61,7 @@
 
 <form onsubmit="music(); return false;">
 <input type ="radio" value="song1" id= "song1" name="songs">
-<label for="song2"> song 2</label><br>
+<label for="song2"> song 1</label><br>
 <input type ="radio" value="song2" id= "song2" name="songs">
 <label for="song2"> song2</label><br>
 
@@ -71,7 +71,7 @@
 <script>
 function music()
 {
-songs = document.getElementById('songs').value;
+let songs = document.querySelector('input[name="songs"]:checked');
   if (songs==="song1")
   {
   text()
