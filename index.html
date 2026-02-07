@@ -35,7 +35,14 @@
         function text() {
             let g = document.getElementById('wrote').value;
 localStorage.setItem('type',g); document.getElementById('display').textContent = g;
-        }
+}
+
+ window.onload = function(){
+ let h = localStorage.getItem('type');
+if (h){
+      document.getElementById('display').textContent = h;
+      }
+}
     </script>
 
     <button type="button" onclick="playSound('mixkit-fast-double-click-on-mouse-275.wav')" style="background-color:blue; width:20vw; height: 20vw"> 
