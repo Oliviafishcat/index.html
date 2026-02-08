@@ -79,7 +79,6 @@ if (h){
 </form>
 
 <script>
-audio.loop = true;
 function music()
 {
 let songs = document.querySelector('input[name="songs"]:checked');
@@ -97,6 +96,7 @@ let songs = document.querySelector('input[name="songs"]:checked');
   audio.currentTime=0;
   }
 }
+audio.loop = true;
 </script>
 
 </body>
