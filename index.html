@@ -79,6 +79,7 @@ if (h){
 </form>
 
 <script>
+audio.loop = true;
 function music()
 {
 let songs = document.querySelector('input[name="songs"]:checked');
@@ -89,7 +90,6 @@ let songs = document.querySelector('input[name="songs"]:checked');
   else if(songs.value =="song2")
   {
   playSound('Musica.wav')
-  audio.loop = true;
   }
   else
   {
