@@ -114,7 +114,7 @@ audio.loop = true;
 function sort()
 {
 let valuesnumber = document.getElementById('number'). value;
-let numberlist = valuesnumber.split('');
+let numberlist = valuesnumber.split(/[, ]+/);
 
 localStorage.setItem('NUMBERVALS',numberlist);
 document.getElementById('displaynum').textContent = numberlist;
