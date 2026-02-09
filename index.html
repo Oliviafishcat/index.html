@@ -108,6 +108,15 @@ audio.loop = true;
         placeholder="1 or 2"
         size="10" 
     /> 
-    <input type="submit" value="Send number" onclick="text()">
+    <input type="submit" value="Send number" onclick="sort()">
+
+<script>
+function sort()
+{
+let numberlist = [document.getElementById('wrote').value];
+localStorage.setItem('type',g);
+}
+</script>
+
 </body>
 </html>
