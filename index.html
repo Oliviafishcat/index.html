@@ -117,7 +117,7 @@ let valuesnumber = document.getElementById('number'). value;
 let numberlist = valuesnumber.split(/[, ]+/);
 
 localStorage.setItem('NUMBERVALS',numberlist);
-document.getElementById('displaynum').textContent = NUMBERVALS;
+document.getElementById('displaynum').textContent = numberlist;
 }
 </script>
 <p id="displaynum">NUMBER</p>
