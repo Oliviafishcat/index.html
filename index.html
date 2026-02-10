@@ -111,10 +111,20 @@ audio.loop = true;
     <input type="submit" value="Send number" onclick="sort()">
 
 <script>
+ window.onload = function(){
+ let p = localStorage.getItem('NUMBERVALS');
+if (p){
+      document.getElementById('display').textContent = p;
+      }
+}
+
+
 function sort()
 {
 let valuesnumber = document.getElementById('number'). value;
 let numberlist = valuesnumber.split(/[, ]+/);
+
+numberlist.sort((a,b) => a - b);
 
 localStorage.setItem('NUMBERVALS',numberlist);
 document.getElementById('displaynum').textContent = numberlist;
