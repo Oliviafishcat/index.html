@@ -25,7 +25,7 @@ p {
 }
 /*image for creation*/
 img {
-position = absolute;
-height = auto;
-width = 100px;
+position: absolute;
+height: auto;
+width: 100px;
 }
