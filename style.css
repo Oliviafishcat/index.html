@@ -23,9 +23,3 @@ p {
     color: #555;
     font-size: 6rem;
 }
-/*image for creation*/
-img {
-position: absolute;
-height: auto;
-width: 100px;
-}
